@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="hr_contract_view_form_inherit_print_word_v3" model="ir.ui.view">
+        <field name="name">hr.contract.view.form.inherit.print.word.v3</field>
+        <field name="model">hr.contract</field>
+        <field name="inherit_id" ref="hr_contract.hr_contract_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form/header" position="inside">
+                <button name="action_print_word_contract"
+                        string="In hợp đồng (Word)"
+                        type="object"
+                        class="oe_highlight"
+                        icon="fa-file-word-o"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

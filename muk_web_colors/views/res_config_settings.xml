@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+
+	<record id="view_res_config_settings_form" model="ir.ui.view">
+	    <field name="name">form cài đặt cấu hình</field>
+	    <field name="model">res.config.settings</field>
+	    <field name="inherit_id" ref="base_setup.res_config_settings_view_form"/>
+	    <field name="arch" type="xml">
+	    	<xpath expr="//block[@id='user_default_rights']" position="before">
+	    		<block title="Thương hiệu" id="branding_settings">
+	    			<setting string="Màu sắc chế độ sáng" help="Tùy chỉnh giao diện chế độ sáng">
+                     	<div class="w-50 row">
+                            <label for="color_brand_light" string="Thương hiệu" class="d-block w-75 py-2"/>
+                            <field name="color_brand_light" class="d-block w-25 p-0 m-0" widget="color"/>
+                        </div>
+                     	<div class="w-50 row">
+                            <label for="color_primary_light" string="Chính" class="d-block w-75 py-2"/>
+                            <field name="color_primary_light" class="d-block w-25 p-0 m-0" widget="color"/>
+                        </div>
+                     	<div class="w-50 row">
+                            <label for="color_info_light" string="Thông tin" class="d-block w-75 py-2"/>
+                            <field name="color_info_light" class="d-block w-25 p-0 m-0" widget="color"/>
+                        </div>
+                     	<div class="w-50 row">
+                            <label for="color_success_light" string="Thành công" class="d-block w-75 py-2"/>
+                            <field name="color_success_light" class="d-block w-25 p-0 m-0" widget="color"/>
+                        </div>
+                     	<div class="w-50 row">
+                            <label for="color_warning_light" string="Cảnh báo" class="d-block w-75 py-2"/>
+                            <field name="color_warning_light" class="d-block w-25 p-0 m-0" widget="color"/>
+                        </div>
+                     	<div class="w-50 row">
+                            <label for="color_danger_light" string="Nguy hiểm" class="d-block w-75 py-2"/>
+                            <field name="color_danger_light" class="d-block w-25 p-0 m-0" widget="color"/>
+                        </div>
+                        <button 
+                            name="action_reset_light_color_assets" 
+                            icon="oi-arrow-right" 
+                            type="object" 
+                            string="Đặt lại màu sắc chế độ sáng" 
+                            class="btn-link"
+                        />
+                    </setting>
+	    			<setting string="Màu sắc chế độ tối" help="Tùy chỉnh giao diện chế độ tối">
+                     	<div class="w-50 row">
+                            <label for="color_brand_dark" string="Thương hiệu" class="d-block w-75 py-2"/>
+                            <field name="color_brand_dark" class="d-block w-25 p-0 m-0" widget="color"/>
+                        </div>
+                     	<div class="w-50 row">
+                            <label for="color_primary_dark" string="Chính" class="d-block w-75 py-2"/>
+                            <field name="color_primary_dark" class="d-block w-25 p-0 m-0" widget="color"/>
+                        </div>
+                     	<div class="w-50 row">
+                            <label for="color_info_dark" string="Thông tin" class="d-block w-75 py-2"/>
+                            <field name="color_info_dark" class="d-block w-25 p-0 m-0" widget="color"/>
+                        </div>
+                     	<div class="w-50 row">
+                            <label for="color_success_dark" string="Thành công" class="d-block w-75 py-2"/>
+                            <field name="color_success_dark" class="d-block w-25 p-0 m-0" widget="color"/>
+                        </div>
+                     	<div class="w-50 row">
+                            <label for="color_warning_dark" string="Cảnh báo" class="d-block w-75 py-2"/>
+                            <field name="color_warning_dark" class="d-block w-25 p-0 m-0" widget="color"/>
+                        </div>
+                     	<div class="w-50 row">
+                            <label for="color_danger_dark" string="Nguy hiểm" class="d-block w-75 py-2"/>
+                            <field name="color_danger_dark" class="d-block w-25 p-0 m-0" widget="color"/>
+                        </div>
+                        <button 
+                            name="action_reset_dark_color_assets" 
+                            icon="oi-arrow-right" 
+                            type="object" 
+                            string="Đặt lại màu sắc chế độ tối" 
+                            class="btn-link"
+                        />
+                    </setting>
+	    		</block>
+	    	</xpath>
+	    </field>
+	</record>
+	
+</odoo>

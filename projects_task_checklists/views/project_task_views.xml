@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <!-- Kế thừa form task của module Project để thêm các trường cần thiết -->
+    <record id="view_task_form2" model="ir.ui.view">
+        <field name="name">project.task.view.form.inherit.projects.task.checklists</field>
+        <field name="model">project.task</field>
+        <field name="inherit_id" ref="project.view_task_form2"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='tag_ids']" position="after">
+                <field name="checklist_ids" invisible="1"/>
+                <field name="checklist_id" string="Danh sách kiểm tra"/>
+            </xpath>
+
+            <xpath expr="//form/sheet/notebook/page[last()]" position="after">
+                <page string="Danh sách kiểm tra" invisible="checklist_id == 'False'">
+                    <field name="checklists_ids">
+                        <list decoration-danger="state=='cancel'"
+                              decoration-success="state=='done'"
+                              decoration-info="state=='in_progress'"
+                              editable="bottom">
+                            <field name="check_list_item_id" string="Mục kiểm tra"/>
+                            <field name="description" string="Mô tả"/>
+                            <button type="object" name="action_approve_and_next"
+                                    class="text-success" icon="fa-check"
+                                    string="Phê duyệt và tiếp tục"/>
+                            <button type="object" name="action_mark_completed"
+                                    icon="fa-check-circle"
+                                    class="text-success"
+                                    string="Hoàn thành"/>
+                            <button type="object" name="action_mark_canceled"
+                                    icon="fa-times" class="text-danger"
+                                    string="Hủy bỏ"/>
+                            <field name="state" string="Trạng thái"/>
+                        </list>
+                    </field>
+                </page>
+            </xpath>
+
+            <xpath expr="//field[@name='partner_id']" position="after">
+                <field name="start_date" string="Ngày bắt đầu"/>
+                <field name="end_date" string="Ngày kết thúc"/>
+                <field name="progress" widget="progressbar" class="oe_inline" string="Tiến độ"/>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Kế thừa tree view của task để thêm trường tiến độ -->
+    <record id="view_task_tree2" model="ir.ui.view">
+        <field name="name">project.task.view.tree.inherit.projects.task.checklists</field>
+        <field name="model">project.task</field>
+        <field name="inherit_id" ref="project.view_task_tree2"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='activity_ids']" position="after">
+                <field name="progress" widget="progressbar" string="Tiến độ"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

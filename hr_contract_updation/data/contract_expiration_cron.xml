@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="mail_template_contract_expire" model="mail.template">
+        <field name="name">Thông báo hợp đồng sắp hết hạn</field>
+        <field name="model_id" ref="hr_contract.model_hr_contract"/>
+        <field name="subject">[Thông báo] Hợp đồng của ${object.employee_id.name} sắp hết hạn</field>
+        <field name="body_html"><![CDATA[
+            <p>Kính gửi phòng Nhân sự,</p>
+            <p>Hợp đồng của nhân viên <b>${object.employee_id.name}</b> sắp hết hạn vào <b>${object.date_end}</b>.</p>
+        ]]></field>
+    </record>
+    <record id="ir_cron_contract_expiration" model="ir.cron">
+        <field name="name">[HR] Kiểm tra hợp đồng sắp hết hạn</field>
+        <field name="model_id" ref="hr_contract.model_hr_contract"/>
+        <field name="state">code</field>
+        <field name="code">model._cron_notify_contract_expiration()</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">days</field>
+        <field name="numbercall">-1</field>
+        <field name="active">True</field>
+    </record>
+</odoo>

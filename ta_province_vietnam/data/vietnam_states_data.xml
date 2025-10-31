@@ -1,0 +1,127 @@
+<odoo>
+    <!-- Update 34 tỉnh thành mới theo Nghị quyết 202/2025/QH15 -->
+
+    <!-- 6 Thành phố trực thuộc Trung ương -->
+    <record id="base.state_vn_VN-HN" model="res.country.state">
+        <field name="is_vietnam_new_province">True</field>
+    </record>
+
+    <record id="base.state_vn_VN-SG" model="res.country.state">
+        <field name="is_vietnam_new_province">True</field>
+    </record>
+
+    <record id="base.state_vn_VN-DN" model="res.country.state">
+        <field name="is_vietnam_new_province">True</field>
+    </record>
+
+    <record id="base.state_vn_VN-HP" model="res.country.state">
+        <field name="is_vietnam_new_province">True</field>
+    </record>
+
+    <record id="base.state_vn_VN-CT" model="res.country.state">
+        <field name="is_vietnam_new_province">True</field>
+    </record>
+
+    <record id="base.state_vn_VN-57" model="res.country.state">
+        <field name="is_vietnam_new_province">True</field>
+    </record>
+
+    <!-- 23 đơn vị hành chính mới được hợp nhất -->
+    <record id="base.state_vn_VN-07" model="res.country.state">
+        <field name="is_vietnam_new_province">True</field>
+    </record>
+
+    <record id="base.state_vn_VN-02" model="res.country.state">
+        <field name="is_vietnam_new_province">True</field>
+    </record>
+
+    <record id="base.state_vn_VN-69" model="res.country.state">
+        <field name="is_vietnam_new_province">True</field>
+    </record>
+
+    <record id="base.state_vn_VN-68" model="res.country.state">
+        <field name="is_vietnam_new_province">True</field>
+    </record>
+
+    <record id="base.state_vn_VN-56" model="res.country.state">
+        <field name="is_vietnam_new_province">True</field>
+    </record>
+
+    <record id="base.state_vn_VN-66" model="res.country.state">
+        <field name="is_vietnam_new_province">True</field>
+    </record>
+
+    <record id="base.state_vn_VN-18" model="res.country.state">
+        <field name="is_vietnam_new_province">True</field>
+    </record>
+
+    <record id="base.state_vn_VN-25" model="res.country.state">
+        <field name="is_vietnam_new_province">True</field>
+    </record>
+
+    <record id="base.state_vn_VN-29" model="res.country.state">
+        <field name="is_vietnam_new_province">True</field>
+    </record>
+
+    <record id="base.state_vn_VN-30" model="res.country.state">
+        <field name="is_vietnam_new_province">True</field>
+    </record>
+
+    <record id="base.state_vn_VN-34" model="res.country.state">
+        <field name="is_vietnam_new_province">True</field>
+    </record>
+
+    <record id="base.state_vn_VN-35" model="res.country.state">
+        <field name="is_vietnam_new_province">True</field>
+    </record>
+
+    <record id="base.state_vn_VN-33" model="res.country.state">
+        <field name="is_vietnam_new_province">True</field>
+    </record>
+
+    <record id="base.state_vn_VN-39" model="res.country.state">
+        <field name="is_vietnam_new_province">True</field>
+    </record>
+
+    <record id="base.state_vn_VN-37" model="res.country.state">
+        <field name="is_vietnam_new_province">True</field>
+    </record>
+
+    <record id="base.state_vn_VN-49" model="res.country.state">
+        <field name="is_vietnam_new_province">True</field>
+    </record>
+
+    <record id="base.state_vn_VN-45" model="res.country.state">
+        <field name="is_vietnam_new_province">True</field>
+    </record>
+
+    <record id="base.state_vn_VN-59" model="res.country.state">
+        <field name="is_vietnam_new_province">True</field>
+    </record>
+
+    <record id="base.state_vn_VN-44" model="res.country.state">
+        <field name="is_vietnam_new_province">True</field>
+    </record>
+
+    <!-- 5 tỉnh thành còn lại không thay đổi -->
+    <record id="base.state_vn_VN-04" model="res.country.state">
+        <field name="is_vietnam_new_province">True</field>
+    </record>
+
+    <record id="base.state_vn_VN-71" model="res.country.state">
+        <field name="is_vietnam_new_province">True</field>
+    </record>
+
+    <record id="base.state_vn_VN-09" model="res.country.state">
+        <field name="is_vietnam_new_province">True</field>
+    </record>
+
+    <record id="base.state_vn_VN-22" model="res.country.state">
+        <field name="is_vietnam_new_province">True</field>
+    </record>
+
+    <record id="base.state_vn_VN-26" model="res.country.state">
+        <field name="is_vietnam_new_province">True</field>
+    </record>
+
+</odoo>

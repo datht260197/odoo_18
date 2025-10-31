@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <!-- Cây danh sách (tree view) Danh sách kiểm tra công việc -->
+    <record id="task_checklist_view_tree" model="ir.ui.view">
+        <field name="name">task.checklist.view.tree</field>
+        <field name="model">task.checklist</field>
+        <field name="arch" type="xml">
+            <list string="Danh sách kiểm tra công việc">
+                <field name="name" string="Tên danh sách"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- Biểu mẫu (form view) Danh sách kiểm tra công việc -->
+    <record id="task_checklist_view_form" model="ir.ui.view">
+        <field name="name">task.checklist.view.form</field>
+        <field name="model">task.checklist</field>
+        <field name="arch" type="xml">
+            <form string="Danh sách kiểm tra công việc">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name" string="Tên danh sách"/>
+                            <field name="description" string="Mô tả"/>
+                        </group>
+                        <group>
+                            <field name="task_id" invisible="1"/>
+                        </group>
+                    </group>
+                    <label for="checklist_ids" string="Các mục kiểm tra"/>
+                    <field name="checklist_ids">
+                        <list create="1" string="Danh sách mục kiểm tra">
+                            <field name="sequence" widget="handle" string="Thứ tự"/>
+                            <field name="name" required="1" string="Tên mục"/>
+                            <field name="description" string="Mô tả"/>
+                        </list>
+                    </field>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Hành động cửa sổ (window action) cho Danh sách kiểm tra công việc -->
+    <record id="task_checklist_action" model="ir.actions.act_window">
+        <field name="name">Danh sách kiểm tra công việc</field>
+        <field name="res_model">task.checklist</field>
+        <field name="view_mode">list,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Tạo một danh sách kiểm tra mới để theo dõi các bước trong công việc.
+            </p>
+        </field>
+    </record>
+
+    <!-- Menu Danh sách kiểm tra -->
+    <menuitem
+            id="project_checklist_root"
+            name="Danh sách kiểm tra"
+            parent="project.menu_project_config"
+            sequence="6"/>
+
+    <!-- Menu con: Danh sách kiểm tra công việc -->
+    <menuitem
+            parent="project_checklist_root"
+            id="menu_task_checklist"
+            name="Danh sách kiểm tra công việc"
+            action="task_checklist_action"
+            sequence="1"/>
+</odoo>

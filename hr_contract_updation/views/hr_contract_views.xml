@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Kế thừa form Hợp đồng để thêm loại HĐ, mã HĐ, và thông tin CCCD -->
+    <record id="view_hr_contract_form_inherit_code_type_vi" model="ir.ui.view">
+        <field name="name">hr.contract.view.form.inherit.code.type.vi</field>
+        <field name="model">hr.contract</field>
+        <field name="inherit_id" ref="hr_contract.hr_contract_view_form"/>
+        <field name="arch" type="xml">
+
+            <!-- Thêm trường Loại hợp đồng và Mã hợp đồng ngay sau tên -->
+            <xpath expr="//field[@name='name']" position="after">
+                <field name="contract_type_id" required="1" string="Loại hợp đồng"/>
+                <field name="contract_code" readonly="1" string="Mã hợp đồng"/>
+            </xpath>
+
+            <!-- Thêm nhóm hiển thị thông tin CCCD và chức danh -->
+            <xpath expr="//group[@name='contract_details']" position="after">
+                <group string="CCCD &amp; Chức danh">
+                    <field name="id_number" string="Số CCCD"/>
+                    <field name="id_issue_date" string="Ngày cấp CCCD"/>
+                    <field name="id_issue_place" string="Nơi cấp CCCD"/>
+                    <field name="job_title" string="Chức danh"/>
+                </group>
+            </xpath>
+
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="contract_type_hdld" model="hr.contract.type">
+        <field name="code">HĐLD</field>
+        <field name="name">Hợp đồng lao động</field>
+    </record>
+    <record id="contract_type_hdtv" model="hr.contract.type">
+        <field name="code">HĐTV</field>
+        <field name="name">Hợp đồng thử việc</field>
+    </record>
+</odoo>

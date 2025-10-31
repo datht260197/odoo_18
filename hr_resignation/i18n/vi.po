@@ -1,0 +1,472 @@
+# Dịch Odoo Server.
+# Tệp này chứa bản dịch của các mô-đun sau:
+# 	* hr_resignation
+
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-27 10:24+0000\n"
+"PO-Revision-Date: 2022-06-27 10:24+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__message_needaction
+msgid "Action Needed"
+msgstr "Cần hành động"
+
+#. module: hr_resignation
+#: model_terms:ir.ui.view,arch_db:hr_resignation.employee_resignation_form
+msgid "Approve"
+msgstr "Phê duyệt"
+
+#. module: hr_resignation
+#: model:ir.model.fields.selection,name:hr_resignation.selection__hr_resignation__state__approved
+msgid "Approved"
+msgstr "Đã phê duyệt"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__approved_revealing_date
+msgid "Approved Last Day Of Employee"
+msgstr "Ngày làm việc cuối cùng được phê duyệt của nhân viên"
+
+#. module: hr_resignation
+#: model:ir.actions.act_window,name:hr_resignation.view_approved_resignation
+#: model:ir.ui.menu,name:hr_resignation.employee_resignation_approved
+#: model_terms:ir.actions.act_window,help:hr_resignation.view_approved_resignation
+msgid "Approved Resignation"
+msgstr "Đơn xin nghỉ việc đã được phê duyệt"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__message_attachment_count
+msgid "Attachment Count"
+msgstr "Số lượng tài liệu đính kèm"
+
+#. module: hr_resignation
+#: model_terms:ir.ui.view,arch_db:hr_resignation.employee_resignation_form
+msgid "Cancel"
+msgstr "Hủy"
+
+#. module: hr_resignation
+#: model:ir.model.fields.selection,name:hr_resignation.selection__hr_resignation__state__confirm
+#: model_terms:ir.ui.view,arch_db:hr_resignation.employee_resignation_form
+msgid "Confirm"
+msgstr "Xác nhận"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__resign_confirm_date
+msgid "Confirmed Date"
+msgstr "Ngày xác nhận"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__create_uid
+msgid "Created by"
+msgstr "Được tạo bởi"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__create_date
+msgid "Created on"
+msgstr "Được tạo vào"
+
+#. module: hr_resignation
+#: model:ir.model.fields,help:hr_resignation.field_hr_employee__resign_date
+msgid "Date of the resignation"
+msgstr "Ngày nghỉ việc"
+
+#. module: hr_resignation
+#: model:ir.model.fields,help:hr_resignation.field_hr_resignation__resign_confirm_date
+msgid "Date on which the request is confirmed by the employee."
+msgstr "Ngày mà yêu cầu được nhân viên xác nhận."
+
+#. module: hr_resignation
+#: model:ir.model.fields,help:hr_resignation.field_hr_resignation__approved_revealing_date
+msgid "Date on which the request is confirmed by the manager."
+msgstr "Ngày mà yêu cầu được quản lý xác nhận."
+
+#. module: hr_resignation
+#: model_terms:ir.ui.view,arch_db:hr_resignation.employee_resignation_form
+msgid "Dates"
+msgstr "Ngày tháng"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__department_id
+msgid "Department"
+msgstr "Phòng ban"
+
+#. module: hr_resignation
+#: model:ir.model.fields,help:hr_resignation.field_hr_resignation__department_id
+msgid "Department of the employee"
+msgstr "Phòng ban của nhân viên"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: hr_resignation
+#: model:ir.model.fields.selection,name:hr_resignation.selection__hr_resignation__state__draft
+msgid "Draft"
+msgstr "Nháp"
+
+#. module: hr_resignation
+#: model:ir.model,name:hr_resignation.model_hr_employee
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__employee_id
+msgid "Employee"
+msgstr "Nhân viên"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__employee_contract
+msgid "Employee Contract"
+msgstr "Hợp đồng nhân viên"
+
+#. module: hr_resignation
+#: model_terms:ir.ui.view,arch_db:hr_resignation.employee_resignation_form
+msgid "Employee Details"
+msgstr "Thông tin nhân viên"
+
+#. module: hr_resignation
+#: model:ir.actions.act_window,name:hr_resignation.view_employee_resignation
+#: model_terms:ir.ui.view,arch_db:hr_resignation.employee_resignation_form
+#: model_terms:ir.ui.view,arch_db:hr_resignation.employee_resignation_tree
+msgid "Employee Resignation"
+msgstr "Đơn xin nghỉ việc của nhân viên"
+
+#. module: hr_resignation
+#: model_terms:ir.actions.act_window,help:hr_resignation.view_employee_resignation
+msgid "Employee Resignation Form"
+msgstr "Mẫu đơn xin nghỉ việc của nhân viên"
+
+#. module: hr_resignation
+#: model:ir.model.fields,help:hr_resignation.field_hr_resignation__expected_revealing_date
+msgid "Employee requested date on which he is revealing from the company."
+msgstr "Ngày mà nhân viên yêu cầu nghỉ việc từ công ty."
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_employee__fired
+msgid "Fired"
+msgstr "Bị sa thải"
+
+#. module: hr_resignation
+#: model_terms:ir.ui.view,arch_db:hr_resignation.hr_employee_resigned_filter
+msgid "Fired Employees"
+msgstr "Nhân viên bị sa thải"
+
+#. module: hr_resignation
+#: model:ir.model.fields.selection,name:hr_resignation.selection__hr_resignation__resignation_type__fired
+msgid "Fired by the company"
+msgstr "Sa thải bởi công ty"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__message_follower_ids
+msgid "Followers"
+msgstr "Người theo dõi"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Người theo dõi (Đối tác)"
+
+#. module: hr_resignation
+#: model:ir.actions.server,name:hr_resignation.ir_cron_data_employee_resignation_ir_actions_server
+#: model:ir.cron,cron_name:hr_resignation.ir_cron_data_employee_resignation
+#: model:ir.cron,name:hr_resignation.ir_cron_data_employee_resignation
+msgid "HR Resignation: update employee"
+msgstr "Nghỉ việc HR: cập nhật nhân viên"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__has_message
+msgid "Has Message"
+msgstr "Có tin nhắn"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__id
+msgid "ID"
+msgstr "CMND"
+
+#. module: hr_resignation
+#: model:ir.model.fields,help:hr_resignation.field_hr_employee__fired
+msgid "If checked then employee has fired"
+msgstr "Nếu được chọn, nhân viên đã bị sa thải"
+
+#. module: hr_resignation
+#: model:ir.model.fields,help:hr_resignation.field_hr_employee__resigned
+msgid "If checked then employee has resigned"
+msgstr "Nếu được chọn, nhân viên đã nghỉ việc"
+
+#. module: hr_resignation
+#: model:ir.model.fields,help:hr_resignation.field_hr_resignation__message_needaction
+#: model:ir.model.fields,help:hr_resignation.field_hr_resignation__message_unread
+msgid "If checked, new messages require your attention."
+msgstr "Nếu được chọn, các tin nhắn mới cần sự chú ý của bạn."
+
+#. module: hr_resignation
+#: model:ir.model.fields,help:hr_resignation.field_hr_resignation__message_has_error
+#: model:ir.model.fields,help:hr_resignation.field_hr_resignation__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Nếu được chọn, một số tin nhắn có lỗi trong việc giao hàng."
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__message_is_follower
+msgid "Is Follower"
+msgstr "Là người theo dõi"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__joined_date
+msgid "Join Date"
+msgstr "Ngày gia nhập"
+
+#. module: hr_resignation
+#: model:ir.model.fields,help:hr_resignation.field_hr_resignation__joined_date
+msgid "Joining date of the employee.i.e Start date of the first contract"
+msgstr "Ngày gia nhập của nhân viên, tức là ngày bắt đầu hợp đồng đầu tiên"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__expected_revealing_date
+msgid "Last Day of Employee"
+msgstr "Ngày cuối cùng của nhân viên"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation____last_update
+msgid "Last Modified on"
+msgstr "Lần sửa đổi cuối"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__write_uid
+msgid "Last Updated by"
+msgstr "Lần cập nhật cuối bởi"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__write_date
+msgid "Last Updated on"
+msgstr "Lần cập nhật cuối vào"
+
+#. module: hr_resignation
+#: code:addons/hr_resignation/models/hr_resignation.py:0
+#, python-format
+msgid "Last date of the Employee must be anterior to Joining date"
+msgstr "Ngày cuối cùng của nhân viên phải trước ngày gia nhập"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "Tài liệu đính kèm chính"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__message_has_error
+msgid "Message Delivery error"
+msgstr "Lỗi giao hàng tin nhắn"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__message_ids
+msgid "Messages"
+msgstr "Tin nhắn"
+
+#. module: hr_resignation
+#: model:ir.model.fields,help:hr_resignation.field_hr_resignation__employee_id
+msgid "Name of the employee for whom the request is creating"
+msgstr "Tên của nhân viên mà yêu cầu đang được tạo"
+
+#. module: hr_resignation
+#: code:addons/hr_resignation/models/hr_resignation.py:0
+#: code:addons/hr_resignation/models/hr_resignation.py:0
+#: code:addons/hr_resignation/models/hr_resignation.py:0
+#: code:addons/hr_resignation/models/hr_resignation.py:0
+#, python-format
+msgid "New"
+msgstr "Mới"
+
+#. module: hr_resignation
+#: model:ir.model.fields.selection,name:hr_resignation.selection__hr_resignation__resignation_type__resigned
+msgid "Normal Resignation"
+msgstr "Nghỉ việc bình thường"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__notice_period
+msgid "Notice Period"
+msgstr "Thời gian thông báo"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Số lượng hành động"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__message_has_error_counter
+msgid "Number of errors"
+msgstr "Số lượng lỗi"
+
+#. module: hr_resignation
+#: model:ir.model.fields,help:hr_resignation.field_hr_resignation__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "Số lượng tin nhắn cần hành động"
+
+#. module: hr_resignation
+#: model:ir.model.fields,help:hr_resignation.field_hr_resignation__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Số lượng tin nhắn có lỗi giao hàng"
+
+#. module: hr_resignation
+#: model:ir.model.fields,help:hr_resignation.field_hr_resignation__message_unread_counter
+msgid "Number of unread messages"
+msgstr "Số lượng tin nhắn chưa đọc"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__name
+msgid "Order Reference"
+msgstr "Tham chiếu đơn hàng"
+
+#. module: hr_resignation
+#: code:addons/hr_resignation/models/hr_resignation.py:0
+#, python-format
+msgid "Please enter valid dates."
+msgstr "Vui lòng nhập ngày hợp lệ."
+
+#. module: hr_resignation
+#: code:addons/hr_resignation/models/hr_resignation.py:0
+#, python-format
+msgid "Please set joining date for employee"
+msgstr "Vui lòng đặt ngày gia nhập cho nhân viên"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__reason
+msgid "Reason"
+msgstr "Lý do"
+
+#. module: hr_resignation
+#: model_terms:ir.ui.view,arch_db:hr_resignation.employee_resignation_form
+msgid "Reject"
+msgstr "Từ chối"
+
+#. module: hr_resignation
+#: model:ir.model.fields.selection,name:hr_resignation.selection__hr_resignation__state__cancel
+msgid "Rejected"
+msgstr "Bị từ chối"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_employee__resign_date
+msgid "Resign Date"
+msgstr "Ngày nghỉ việc"
+
+#. module: hr_resignation
+#: model:ir.ui.menu,name:hr_resignation.employee_resignation
+msgid "Resignation"
+msgstr "Nghỉ việc"
+
+#. module: hr_resignation
+#: model_terms:ir.ui.view,arch_db:hr_resignation.employee_resignation_form
+msgid "Resignation Details"
+msgstr "Chi tiết nghỉ việc"
+
+#. module: hr_resignation
+#: model:ir.ui.menu,name:hr_resignation.employee_resignation_request
+msgid "Resignation Request"
+msgstr "Yêu cầu nghỉ việc"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__resignation_type
+msgid "Resignation Type"
+msgstr "Loại nghỉ việc"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_employee__resigned
+msgid "Resigned"
+msgstr "Đã nghỉ việc"
+
+#. module: hr_resignation
+#: model_terms:ir.ui.view,arch_db:hr_resignation.hr_employee_resigned_filter
+msgid "Resigned Employees"
+msgstr "Nhân viên đã nghỉ việc"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "Lỗi giao hàng SMS"
+
+#. module: hr_resignation
+#: model:ir.model.fields,help:hr_resignation.field_hr_resignation__resignation_type
+msgid ""
+"Select the type of resignation: normal resignation or fired by the company"
+msgstr ""
+"Chọn loại nghỉ việc: nghỉ việc bình thường hoặc bị sa thải bởi công ty"
+
+#. module: hr_resignation
+#: model_terms:ir.ui.view,arch_db:hr_resignation.employee_resignation_form
+msgid "Set to Draft"
+msgstr "Đặt thành nháp"
+
+#. module: hr_resignation
+#: model:ir.model.fields,help:hr_resignation.field_hr_resignation__reason
+msgid "Specify reason for leaving the company"
+msgstr "Xác định lý do rời khỏi công ty"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__state
+msgid "Status"
+msgstr "Trạng thái"
+
+#. module: hr_resignation
+#: code:addons/hr_resignation/models/hr_resignation.py:0
+#: code:addons/hr_resignation/models/hr_resignation.py:0
+#, python-format
+msgid ""
+"There is a resignation request in confirmed or approved state for this "
+"employee"
+msgstr "Có yêu cầu nghỉ việc trong trạng thái đã xác nhận hoặc đã phê duyệt cho nhân viên này"
+
+#. module: hr_resignation
+#: model_terms:ir.ui.view,arch_db:hr_resignation.employee_resignation_form
+msgid "Type"
+msgstr "Loại"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__message_unread
+msgid "Unread Messages"
+msgstr "Tin nhắn chưa đọc"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "Bộ đếm tin nhắn chưa đọc"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__website_message_ids
+msgid "Website Messages"
+msgstr "Tin nhắn trên website"
+
+#. module: hr_resignation
+#: model:ir.model.fields,help:hr_resignation.field_hr_resignation__website_message_ids
+msgid "Website communication history"
+msgstr "Lịch sử giao tiếp trên website"
+
+#. module: hr_resignation
+#: code:addons/hr_resignation/models/hr_resignation.py:0
+#, python-format
+msgid "You cannot create request for other employees"
+msgstr "Bạn không thể tạo yêu cầu cho nhân viên khác"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__read_only
+msgid "check field"
+msgstr "kiểm tra trường"
+
+#. module: hr_resignation
+#: model:ir.model,name:hr_resignation.model_hr_resignation
+msgid "hr.resignation"
+msgstr "hr.nghỉ việc"
+
+
+
+
+
+
+
+
+
+
+
+

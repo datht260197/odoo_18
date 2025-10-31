@@ -1,0 +1,251 @@
+# Dịch Odoo Server.
+# Tệp này chứa bản dịch của các mô-đun sau:
+# 	* hr_employee_updation
+
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-27 09:35+0000\n"
+"PO-Revision-Date: 2022-06-27 09:35+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: hr_employee_updation
+#: model_terms:ir.ui.view,arch_db:hr_employee_updation.hr_contract_notice_period
+msgid "<span> days</span>"
+msgstr "<span> ngày</span>"
+
+#. module: hr_employee_updation
+#: model_terms:ir.ui.view,arch_db:hr_employee_updation.journal_config_settings_view_form
+msgid "<span>days</span>"
+msgstr "<span> ngày</span>"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee__id_attachment_id
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee__passport_attachment_ids
+msgid "Attachment"
+msgstr "Tài liệu đính kèm"
+
+#. module: hr_employee_updation
+#: model:ir.model,name:hr_employee_updation.model_res_config_settings
+msgid "Config Settings"
+msgstr "Cài đặt cấu hình"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee_family__member_contact
+msgid "Contact No"
+msgstr "Số liên lạc"
+
+#. module: hr_employee_updation
+#: model:ir.model,name:hr_employee_updation.model_hr_contract
+msgid "Contract"
+msgstr "Hợp đồng"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee_family__create_uid
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee_relation__create_uid
+msgid "Created by"
+msgstr "Được tạo bởi"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee_family__create_date
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee_relation__create_date
+msgid "Created on"
+msgstr "Được tạo vào"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee_family__birth_date
+msgid "DOB"
+msgstr "Ngày sinh"
+
+#. module: hr_employee_updation
+#: model_terms:ir.ui.view,arch_db:hr_employee_updation.hr_employee_inherit_form_view
+msgid "Dependence Details"
+msgstr "Chi tiết phụ thuộc"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee_family__display_name
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee_relation__display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: hr_employee_updation
+#: model:ir.model,name:hr_employee_updation.model_hr_employee
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee_family__employee_id
+msgid "Employee"
+msgstr "Nhân viên"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,help:hr_employee_updation.field_hr_employee__joining_date
+msgid "Employee joining date computed from the contract start date"
+msgstr "Ngày gia nhập nhân viên được tính từ ngày bắt đầu hợp đồng"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee__id_expiry_date
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee__passport_expiry_date
+msgid "Expiry Date"
+msgstr "Ngày hết hạn"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,help:hr_employee_updation.field_hr_employee__id_expiry_date
+msgid "Expiry date of Identification ID"
+msgstr "Ngày hết hạn của ID nhận dạng"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,help:hr_employee_updation.field_hr_employee__passport_expiry_date
+msgid "Expiry date of Passport ID"
+msgstr "Ngày hết hạn của ID hộ chiếu"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee__family_info_ids
+msgid "Family"
+msgstr "Gia đình"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,help:hr_employee_updation.field_hr_employee__family_info_ids
+msgid "Family Information"
+msgstr "Thông tin gia đình"
+
+#. module: hr_employee_updation
+#: model:ir.actions.server,name:hr_employee_updation.employee_data_reminder_ir_actions_server
+#: model:ir.cron,cron_name:hr_employee_updation.ir_cron_employee_data_reminder
+#: model:ir.cron,name:hr_employee_updation.ir_cron_employee_data_reminder
+msgid "HR Employee Data Expiration"
+msgstr "Hết hạn dữ liệu nhân viên HR"
+
+#. module: hr_employee_updation
+#: model:ir.model,name:hr_employee_updation.model_hr_employee_family
+msgid "HR Employee Family"
+msgstr "Gia đình nhân viên HR"
+
+#. module: hr_employee_updation
+#: model:ir.ui.menu,name:hr_employee_updation.hr_management_menu
+msgid "HR Management"
+msgstr "Quản lý nhân sự"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee_family__id
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee_relation__id
+msgid "ID"
+msgstr "CMND"
+
+#. module: hr_employee_updation
+#: code:addons/hr_employee_updation/models/hr_employee.py:0
+#, python-format
+msgid "ID-%s Expired On %s"
+msgstr "CMND-%s hết hạn vào %s"
+
+#. module: hr_employee_updation
+#: model_terms:ir.ui.view,arch_db:hr_employee_updation.hr_employee_inherit_form_view
+msgid "Identification ID"
+msgstr "ID nhận dạng"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee__joining_date
+msgid "Joining Date"
+msgstr "Ngày gia nhập"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee_family____last_update
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee_relation____last_update
+msgid "Last Modified on"
+msgstr "Lần sửa đổi cuối"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee_family__write_uid
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee_relation__write_uid
+msgid "Last Updated by"
+msgstr "Lần cập nhật cuối bởi"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee_family__write_date
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee_relation__write_date
+msgid "Last Updated on"
+msgstr "Lần cập nhật cuối vào"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee__personal_mobile
+msgid "Mobile"
+msgstr "Điện thoại di động"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee_family__member_name
+msgid "Name"
+msgstr "Tên"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,field_description:hr_employee_updation.field_res_config_settings__no_of_days
+msgid "No Of Days"
+msgstr "Số ngày"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_contract__notice_days
+#: model:ir.model.fields,field_description:hr_employee_updation.field_res_config_settings__notice_period
+msgid "Notice Period"
+msgstr "Thời gian thông báo"
+
+#. module: hr_employee_updation
+#: model_terms:ir.ui.view,arch_db:hr_employee_updation.hr_employee_inherit_form_view
+msgid "Passport ID"
+msgstr "ID hộ chiếu"
+
+#. module: hr_employee_updation
+#: code:addons/hr_employee_updation/models/hr_employee.py:0
+#, python-format
+msgid "Passport-%s Expired On %s"
+msgstr "Hộ chiếu-%s hết hạn vào %s"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,help:hr_employee_updation.field_hr_employee__personal_mobile
+msgid "Personal mobile number of the employee"
+msgstr "Số điện thoại di động cá nhân của nhân viên"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee_family__relation_id
+msgid "Relation"
+msgstr "Quan hệ"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee_relation__name
+msgid "Relationship"
+msgstr "Mối quan hệ"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,help:hr_employee_updation.field_hr_employee_family__relation_id
+msgid "Relationship with the employee"
+msgstr "Mối quan hệ với nhân viên"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,help:hr_employee_updation.field_hr_employee_relation__name
+msgid "Relationship with the employee"
+msgstr "Mối quan hệ với nhân viên"
+
+#. module: hr_employee_updation
+#: model:ir.ui.menu,name:hr_employee_updation.employee_report_menu
+msgid "Reports"
+msgstr "Báo cáo"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,help:hr_employee_updation.field_hr_employee_family__employee_id
+msgid "Select corresponding Employee"
+msgstr "Chọn nhân viên tương ứng"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,help:hr_employee_updation.field_hr_employee__passport_attachment_ids
+msgid "You can attach the copy of Passport"
+msgstr "Bạn có thể đính kèm bản sao hộ chiếu"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,help:hr_employee_updation.field_hr_employee__identification_attachment_ids
+msgid "You can attach the copy of your Id"
+msgstr "Bạn có thể đính kèm bản sao ID của bạn"
+
+#. module: hr_employee_updation
+#: model:ir.model,name:hr_employee_updation.model_hr_employee_relation
+msgid "hr.employee.relation"
+msgstr "Mối quan hệ"

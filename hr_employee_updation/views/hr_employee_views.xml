@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_employee_form" model="ir.ui.view">
+        <field name="name">hr.employee.view.form.inherit.hr.employee.updation</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+
+            <!-- ✅ Hiển thị dưới Số CCCD -->
+            <xpath expr="//field[@name='identification_id']" position="after">
+                <field name="id_issue_date"/>
+                <field name="id_issue_place"/>
+            </xpath>
+
+            <!-- ✅ Thêm Dân tộc trước Quốc tịch -->
+            <xpath expr="//field[@name='country_id']" position="before">
+                <field name="ethnicity"/>
+            </xpath>
+
+            <!-- ✅ Giữ phần Thông tin người phụ thuộc -->
+            <xpath expr="//page[@name='personal_information']/group" position="after">
+                <group name="family_info_ids" colspan="4" string="Thông tin người phụ thuộc">
+                    <field name="family_info_ids">
+                        <list editable="bottom">
+                            <field name="member_name" required="1"/>
+                            <field name="relation_id" required="1"/>
+                            <field name="member_contact"/>
+                            <field name="birth_date"/>
+                        </list>
+                    </field>
+                </group>
+            </xpath>
+
+            <!-- ✅ Giữ phần Ngày vào làm -->
+            <xpath expr="//page[@name='hr_settings']//field[@name='employee_type']" position="after">
+                <field name="joining_date"/>
+            </xpath>
+
+            <!-- ✅ Giữ thay thế trường passport -->
+            <field name="passport_id" position="replace"/>
+        </field>
+    </record>
+</odoo>

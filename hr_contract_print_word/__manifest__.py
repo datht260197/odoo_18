@@ -6,7 +6,7 @@
     "category": "Human Resources/Contracts",
     "license": "LGPL-3",
     "author": "Việt Hàn Solutions",
-    "depends": ["hr_contract"],
+    'depends': ['hr_contract', 'hr_contract_updation'],
     "data": [
         "views/hr_contract_views.xml",
     ],

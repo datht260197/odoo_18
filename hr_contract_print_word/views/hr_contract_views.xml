@@ -5,12 +5,18 @@
         <field name="model">hr.contract</field>
         <field name="inherit_id" ref="hr_contract.hr_contract_view_form"/>
         <field name="arch" type="xml">
+            <!-- Nút in hợp đồng -->
             <xpath expr="//form/header" position="inside">
                 <button name="action_print_word_contract"
                         string="In hợp đồng (Word)"
                         type="object"
                         class="oe_highlight"
                         icon="fa-file-word-o"/>
+            </xpath>
+
+            <!-- Thêm ngày sinh hiển thị trên form -->
+            <xpath expr="//field[@name='employee_id']" position="after">
+                <field name="birthday" readonly="1"/>
             </xpath>
         </field>
     </record>

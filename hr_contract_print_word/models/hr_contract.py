@@ -14,6 +14,9 @@ except Exception:
 class HrContract(models.Model):
     _inherit = 'hr.contract'
 
+    # 🔹 Thêm trường ngày sinh, liên kết với hr.employee
+    birthday = fields.Date(string="Ngày sinh", related='employee_id.birthday', store=True, readonly=True)
+
     def _compute_date_parts(self, date_value):
         if not date_value:
             return None, None, None
@@ -43,36 +46,36 @@ class HrContract(models.Model):
         if not template_path:
             raise UserError(_('Không tìm thấy file mẫu hợp đồng trong module hr_contract_print_word/report'))
 
-        # Split start/end date
         s_d, s_m, s_y = self._compute_date_parts(self.date_start)
         e_d, e_m, e_y = self._compute_date_parts(self.date_end)
 
-        # allow override fields if existing in system
-        sign_day = getattr(self, 'sign_day', s_d) or ''
-        sign_month = getattr(self, 'sign_month', s_m) or ''
-        sign_year = getattr(self, 'sign_year', s_y) or ''
-        end_day = getattr(self, 'end_day', e_d) or ''
-        end_month = getattr(self, 'end_month', e_m) or ''
-        end_year = getattr(self, 'end_year', e_y) or ''
+        sign_day, sign_month, sign_year = s_d or '', s_m or '', s_y or ''
+        end_day, end_month, end_year = e_d or '', e_m or '', e_y or ''
 
         employee = self.employee_id
+
         def fmt(d):
             return d and fields.Date.to_date(d).strftime('%d/%m/%Y') or ''
 
         context = {
             'employee_name': employee.name or '',
             'employee_pin': employee.pin or '',
+            'birthday': self.birthday and fields.Date.to_date(self.birthday).strftime('%d/%m/%Y') or '',
             'contract_code': getattr(self, 'contract_code', '') or self.name or '',
             'job_title': getattr(self, 'job_title', '') or employee.job_title or '',
-            'identification_id': getattr(self, 'identification_id', '') or employee.identification_id or '',
-            'id_issue_date': getattr(self, 'id_issue_date', '') or fmt(getattr(employee, 'id_issue_date', False)),
-            'id_issue_place': getattr(self, 'id_issue_place', '') or getattr(employee, 'id_issue_place', '') or '',
-            'private_city': getattr(self, 'private_city', '') or employee.private_city or '',
+            'identification_id': employee.identification_id or '',
+            'id_issue_date': getattr(employee, 'id_issue_date', False) and fields.Date.to_date(employee.id_issue_date).strftime('%d/%m/%Y') or '',
+            'id_issue_place': getattr(employee, 'id_issue_place', '') or '',
+            'private_city': getattr(employee, 'private_city', '') or '',
             'date_start': fmt(self.date_start),
             'date_end': fmt(self.date_end),
             'type_code': (self.type_id.code or '').upper() if self.type_id else '',
-            'sign_day': sign_day, 'sign_month': sign_month, 'sign_year': sign_year,
-            'end_day': end_day, 'end_month': end_month, 'end_year': end_year,
+            'sign_day': sign_day,
+            'sign_month': sign_month,
+            'sign_year': sign_year,
+            'end_day': end_day,
+            'end_month': end_month,
+            'end_year': end_year,
         }
 
         try:
@@ -85,7 +88,8 @@ class HrContract(models.Model):
         doc.save(out)
         out.seek(0)
 
-        filename = 'HopDong_%s.docx' % ((getattr(self, 'contract_code', None) or self.name or employee.name or 'contract').replace('/', '_'))
+        filename = 'HopDong_%s.docx' % (
+            (getattr(self, 'contract_code', None) or self.name or employee.name or 'contract').replace('/', '_'))
         attachment = self.env['ir.attachment'].create({
             'name': filename,
             'type': 'binary',
@@ -94,4 +98,8 @@ class HrContract(models.Model):
             'res_id': self.id,
             'mimetype': 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
         })
-        return {'type': 'ir.actions.act_url', 'url': '/web/content/%s?download=1' % attachment.id, 'target': 'self'}
+        return {
+            'type': 'ir.actions.act_url',
+            'url': '/web/content/%s?download=1' % attachment.id,
+            'target': 'self',
+        }
